@@ -1,9 +1,16 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 
 import Seo from "../components/seo"
 
-const IndexPage = () => (
-  <Seo title="Home" />
-)
+const IndexPage = () => {
+  useEffect(() => {
+    window.location.replace("https://www.jeuduhaka.com");
+  }, []);
+
+  return (
+    <Seo title="Home" />
+  )
+}
+  
 
 export default IndexPage
