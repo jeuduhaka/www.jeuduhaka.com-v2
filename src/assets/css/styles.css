@@ -1,0 +1,40 @@
+.Absolute-Center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+    min-width: 200px;
+    padding: 15px;
+    text-align: center;
+}
+.img-badge {
+    max-height: 50px;
+    max-width: 100%;
+}
+.subtitle {
+    font-size: 24px;
+    font-family: "charcuterie_sans_inlineRg";
+}
+.title {
+    font-family: "charcuterie_sans_inlineRg";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #014DA2;
+    margin: 0;
+    padding: 5px 0 0 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.img-responsive-for-absolute {
+    max-width: 100%;
+    height: auto;
+}
+.block-text {
+    margin-bottom: 10px;
+}
+.img-gift-card {
+    max-height: 60%;
+    max-width: 100%;
+}
