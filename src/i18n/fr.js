@@ -1,9 +1,9 @@
 const translations = {
-    'metaTitle': 'Pour vous : carte cadeau :cardName',
-    'metaTitleNewYear': 'Bonne anéée ! - :cardName',
+    'metaTitle': (cardName) => `Pour toi : carte cadeau ${cardName}`,
+    'metaTitleNewYear': (cardName) => `Bonne année ! - ${cardName}`,
     'hakaGame': "Le Jeu du Haka",
-    'bodyTitle': "Carte cadeau du Jeu du Haka",
-    'bodyTitleNewYear': 'Bonne année!',
+    'bodyTitle': "Carte cadeau Le Jeu du Haka",
+    'bodyTitleNewYear': 'Bonne année !',
     'freeApp': 'Application gratuite',
     'availableAppStore': 'Disponible sur l\'App Store',
     'availableGooglePlay': 'Disponible sur Google Play',

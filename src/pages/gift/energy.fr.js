@@ -1,18 +1,25 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image";
 
-import Seo from '../../components/seo';
 import GiftPage from "../../components/gift-fr";
+import translations from "../../i18n/fr";
+import { capitalizeFirstLetter } from "../../utils";
+
+const cardNameKey = 'energy';
+const cardNameText = capitalizeFirstLetter(translations[cardNameKey]);
 
 const Page = () => (
-    <GiftPage>
-        <Seo title="Carte cadeau Energie" />
-        <StaticImage
-            width={500}
-            src="../../assets/images/giftcards/fr/gift-card-energy-fr.jpg"
-            alt="Carte cadeau Energie"
-        />
-    </GiftPage>
+    <GiftPage
+        metaTitle={translations.metaTitle(cardNameText)}
+        bodyTitle={translations.bodyTitle}
+        giftCardImage={
+            <StaticImage
+                width={500}
+                src={`../../assets/images/giftcards/fr/gift-card-${cardNameKey}-fr.jpg`}
+                alt={`Carte cadeau ${cardNameText}`}
+            />
+        }
+    />
 )
-  
+ 
 export default Page

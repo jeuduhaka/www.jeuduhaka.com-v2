@@ -5,13 +5,13 @@ import GiftPage from "../../components/gift-en";
 import translations from "../../i18n/en";
 import { capitalizeFirstLetter } from "../../utils";
 
-const cardNameKey = 'self-esteem';
+const cardNameKey = 'calm';
 const cardNameText = capitalizeFirstLetter(translations[cardNameKey]);
 
 const Page = () => (
     <GiftPage
-        metaTitle={translations.metaTitle(cardNameText)}
-        bodyTitle={translations.bodyTitle}
+        metaTitle={translations.metaTitleNewYear(cardNameText)}
+        bodyTitle={translations.bodyTitleNewYear}
         giftCardImage={
             <StaticImage
                 width={500}

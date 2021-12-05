@@ -2,19 +2,21 @@ import React from "react"
 import { Container, Row } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 
+import Seo from './seo';
 import translations from '../i18n/en';
 import '../assets/css/fonts.css';
 import '../assets/css/styles.css';
 
-const GiftPage = ({ children }) => (
+const GiftPage = ({ metaTitle, bodyTitle, giftCardImage }) => (
     <Container>
+        <Seo title={metaTitle} />
         <Row>
         <div className="Absolute-Center is-Responsive">
             <div className="block-text">
-                <div className="title">{translations.bodyTitle}</div>
+                <div className="title">{bodyTitle}</div>
             </div>
             <br/>
-            {children}
+            {giftCardImage}
             <br/>
             <br/>
             <div className="subtitle"><a href="https://www.jeuduhaka.com">www.jeuduhaka.com</a></div>

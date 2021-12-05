@@ -1,6 +1,6 @@
 const translations = {
-    'metaTitle': 'For you: :cardName gift card',
-    'metaTitleNewYear': 'Happy New Year! - :cardName',
+    'metaTitle': (cardName) => `For you: ${cardName} gift card`,
+    'metaTitleNewYear': (cardName) => `Happy New Year! - ${cardName}`,
     'hakaGame': "The Haka's Game",
     'bodyTitle': "Haka's Game Gift Card",
     'bodyTitleNewYear': 'Happy New year!',

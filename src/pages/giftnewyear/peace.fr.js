@@ -10,8 +10,8 @@ const cardNameText = capitalizeFirstLetter(translations[cardNameKey]);
 
 const Page = () => (
     <GiftPage
-        metaTitle={translations.metaTitle(cardNameText)}
-        bodyTitle={translations.bodyTitle}
+        metaTitle={translations.metaTitleNewYear(cardNameText)}
+        bodyTitle={translations.bodyTitleNewYear}
         giftCardImage={
             <StaticImage
                 width={500}
